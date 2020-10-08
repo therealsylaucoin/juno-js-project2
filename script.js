@@ -8,7 +8,7 @@ const app = {};
 app.proxyServer = 'http://proxy.hackeryou.com';
 //save plant api URL
 app.apiUrl = `https://trefle.io`;
-// //save API key
+//save API key
 app.apiKey = '713L-97vXJ7otpbTYEMNTdKcclaGFBLtmXL9r6iiNF8';
 
 
@@ -32,23 +32,18 @@ app.getPlants = () => {
     })
     .then(response => {
             //#7 - Create a varibale that will store an array with only the common name of the plants (thanks for the help Lauren!)
-            const plantsFromApi = response.data.map(function(plantObject) {
+            plantName = response.data.map(function(plantObject) {
                 return (plantObject.common_name);
             });
             //#8 - Get random plant name using the array we just created
-            // const randomPlant = Math.floor(Math.random() * plantsFromApi.length);
-            //     console.log(plantsFromApi[randomPlant]);
-            //     return plantsFromApi[randomPlant];
-
-            // return plantsFromApi
-
-            // console.log(plantsFromApi);
+            const randomPlant = Math.floor(Math.random() * plantName.length);
+                // console.log(plantName[randomPlant]);
+                // return plantName[randomPlant];
+            return plantName[randomPlant];
         });
 };
 //this gets me an array of twenty plant names
 app.getPlants();
-
-
 
 
 
