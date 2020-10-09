@@ -35,11 +35,11 @@ app.getPlants = () => {
             plantName = response.data.map(function(plantObject) {
                 return (plantObject.common_name);
             });
-            //#8 - Get random plant name using the array we just created
-            const randomPlant = Math.floor(Math.random() * plantName.length);
+            //#(8) - REAL #8 is below. As it's own function. Get random plant name using the array we just created (put this here because I was unable to use this array as  avariable globally (step #9) to get a random plant name later)
+            //const randomPlant = Math.floor(Math.random() * plantName.length);
                 // console.log(plantName[randomPlant]);
                 // return plantName[randomPlant];
-            return plantName[randomPlant];
+            //return plantName[randomPlant];
         });
 };
 //this gets me an array of twenty plant names
