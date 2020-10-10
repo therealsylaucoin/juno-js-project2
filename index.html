@@ -5,42 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2 - Syl Aucoin</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Poppins:wght@300;400&family=Rowdies&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>What's your plant name?</h1>
+    <header id="header">
+
+        <div class="wrapper headerContainer">
+
+            <div>
+                <h1>What's your plant name?</h1>
+                <p>Welcome to a whimsical random plant name generator! Click on the button bellow to generate a random
+                    name
+                    made up of various plant names and families.</p>
+            </div>
+
+            <form class="wrapper">
+                <!-- This form is to be used later v2 - when leveling up and adding features!
+                <label for="firstName">First Name</label>
+                <input
+                    name="firstName"
+                    id="firstName"
+                    type="text"
+                    placeholder="Pilea">
+                <label for="lastName">Last Name</label>
+                <input
+                    name="lastName"
+                    id="lastName"
+                    type="text"
+                    placeholder="Evergreen"> -->
+                <button href="#plantName" type="submit" class="button">Get plant name!</button>
+            </form>
+
+        </div>
+
     </header>
 
     <main>
-        <form>
-            <!-- <label for="firstName">First Name</label>
-                <input 
-                    name="firstName" 
-                    id="firstName" 
-                    type="text"
-                    placeholder="Pilea">
-            <label for="lastName">Last Name</label>
-                <input 
-                    name="lastName" 
-                    id="lastName" 
-                    type="text"
-                    placeholder="Evergreen"> -->
-            <button type="submit" class="button">Get my plant name!</button>
-        </form>
 
-        <div class="plantNameContainer">
-            <p class="plantFirst"></p>
-            <!-- Generated plant name HTML goes here! -->
+        <div class="middle">
+
+            <div class="plantNameContainer wrapper" id="plantName">
+
+                <h2 class="yourPlantName">Get your plant name!</h2>
+                <p class="yourPlantNameInstructions">Click on 'Get plant name' to try the name generator.</p>
+
+                <div class="nameContainer">
+                    <p class="plantAdjective">Wispy</p>
+                    <p class="plantFirst">Pilea</p>
+                    <p class="plantLast ">Evergreen</p>
+                </div>
+
+            </div>
+
         </div>
 
-        <button class="startOver" id="startOver">Start Over!</button>
-                </div>
+        <!-- FOR LATER v2- <button class="startOver" id="startOver">Start Over!</button> -->
+
+        <div class="facts">
+
+            <h2>Bonus plant facts!</h2>
+
+            <p>Here's some info about a random plant picked from the Trefle.io API!<br> Check them out for some fun and interesting plant information.</p>
+
+            <section class="wrapper factsContainer">
+
+                <p class="plantInfo"></p>
+                <img class="plantPic" src="">
+
+            </section>
+
+        </div>
+
     </main>
 
     <footer>
+        
         <p>
-            Made by Syl - Juno College
+            Made by Syl - Juno College<br>
+            Data sourced from <a href="https://trefle.io">Trefle.io</a>
         </p>
 
     </footer>
@@ -48,7 +94,7 @@
     <script src='https://code.jquery.com/jquery-3.4.0.min.js'
         integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>

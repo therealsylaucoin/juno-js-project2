@@ -1,0 +1,172 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* General styling here!!!!!! */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    max-width: 860px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: 'Bellota', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    text-shadow: 2px 2px rgb(63, 122, 77, 0.7);
+    margin: 0;
+}
+
+/* Header styling here!!!!!!!!!!!!! */
+header,
+.facts {
+    background-image: url(assets/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    opacity: 0.8;
+}
+
+header {
+    height: 100vh;
+    width: auto;
+    position: relative;
+}
+
+.button {
+    background-color: #3F704D;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255, 0.8)
+}
+
+/* Main styling here!!!!!!!!!!!!! */
+.middle {
+    background-color: lightpink;
+}
+
+.plantNameContainer {
+    padding: 25px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plantNameContainer h2 {
+    font-size: 3rem;
+    text-shadow: none;
+}
+
+.nameContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: white;
+    border: 5px solid peachpuff;
+    -webkit-box-shadow: inset 0px 0px 26px -4px rgba(255,218,185,1);
+    -moz-box-shadow: inset 0px 0px 26px -4px rgba(255,218,185,1);
+    box-shadow: inset 0px 0px 26px -4px rgba(255,218,185,1);
+}
+
+.nameContainer p {
+    padding: 0 3px;
+    font-size: 4rem;
+    color: lightgray;
+}
+
+.factsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background: rgb(255, 255, 255, 0.8);
+    height: 60vh;
+}
+
+.facts {
+    padding: 50px 0;
+}
+
+.facts p{
+    text-shadow: 1px 1px white;
+}
+
+.plantInfo {
+    margin-top: 0;
+}
+
+.plantPic {
+    min-width: 300px;
+    min-height: 300px;
+    width: 20vw;
+    height: 20vw;
+    border: 5px solid peachpuff;
+    margin-top: 50px;
+}
+
+/* Footer styling here!!!!!!!!!!!!! */
+footer p{
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES!!!!! */
+@media (max-width: 630px) {
+    .nameContainer p {
+        font-size: 3rem;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .nameContainer p {
+        font-size: 2.5rem;
+    }
+}
