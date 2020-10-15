@@ -5,7 +5,7 @@ const app = {};
 
 //#5 - Save useful info HERE
 //save proxy server URL
-app.proxyServer = 'http://proxy.hackeryou.com';
+app.proxyServer = 'https://proxy.hackeryou.com';
 //save plant api URL
 app.apiUrl = `https://trefle.io`;
 //save API key
